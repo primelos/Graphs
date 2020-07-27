@@ -62,6 +62,7 @@ class Graph:
         """
         Print each vertex in depth-first order
         beginning from starting_vertex.
+        LIFO
         """
         my_stack = Stack()
         my_stack.push(starting_vertex)
@@ -83,7 +84,9 @@ class Graph:
         """
         if visited is None:
             visited = set()
+
         visited.add(starting_vertex)
+        print(starting_vertex)
         for i in self.get_neighbors(starting_vertex):
             if i not in visited:
                 self.dft_recursive(i, visited)
@@ -193,7 +196,7 @@ if __name__ == '__main__':
     Should print:
         {1: {2}, 2: {3, 4}, 3: {5}, 4: {6, 7}, 5: {3}, 6: {3}, 7: {1, 6}}
     '''
-    # print(graph.vertices)
+    print(graph.vertices)
 
     '''
     Valid BFT paths:
