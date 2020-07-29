@@ -37,6 +37,6 @@ x = [
 for i in range(len(x[0])):
     # print(i)
     for j in range(len(x[0])):
-        print(x[i][j])
+        print(x[j][i])
 
        
