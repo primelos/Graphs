@@ -12,6 +12,8 @@ class Stack():
         return len(self.stack)
 
 
+# 2. Build a Graph
+
 class Graph:
     def __init__(self):
         self.vertices = {}
@@ -25,6 +27,9 @@ class Graph:
 
     def get_neighbors(self, vertex):
         return self.vertices[vertex]
+
+    def size(self):
+        return len(self.vertices)
 
 def build_graph(ancestors):
     gg = Graph()
